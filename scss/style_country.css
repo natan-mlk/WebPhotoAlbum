@@ -1,0 +1,218 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: white;
+  font-size: 100%;
+  font-family: "Comfortaa", sans-serif;
+  padding: 0;
+  margin: 0;
+  -webkit-transition: 1.1s;
+  -moz-transition: 1.1s;
+  -ms-transition: 1.1s;
+  -o-transition: 1.1s;
+  transition: 1.1s; }
+
+.fade-out {
+  opacity: 0; }
+
+.welcome_fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center; }
+
+#welcome_pic {
+  opacity: 1;
+  width: 767px; }
+  @media only screen and (min-width: 768px) {
+    #welcome_pic {
+      width: 959px; } }
+  @media only screen and (min-width: 960px) {
+    #welcome_pic {
+      width: 1199px; } }
+  @media only screen and (min-width: 1200px) {
+    #welcome_pic {
+      width: 1440px; } }
+  @media only screen and (min-width: 1441px) {
+    #welcome_pic {
+      width: 1600px; } }
+  @media only screen and (min-width: 1600px) {
+    #welcome_pic {
+      width: 1600px; } }
+
+.welcome_msg {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #4d4d4d;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  position: fixed;
+  margin: 0 auto;
+  top: 190px; }
+
+.title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  word-spacing: 15px;
+  line-height: 1.7; }
+  @media only screen and (min-width: 768px) {
+    .title {
+      font-size: 1.1rem; } }
+  @media only screen and (min-width: 960px) {
+    .title {
+      font-size: 1.2rem; } }
+  @media only screen and (min-width: 1200px) {
+    .title {
+      font-size: 1.5rem; } }
+  .title ~ p {
+    font-size: 0.8rem; }
+    @media only screen and (min-width: 768px) {
+      .title ~ p {
+        font-size: 0.9rem; } }
+    @media only screen and (min-width: 960px) {
+      .title ~ p {
+        font-size: 1rem; } }
+
+.container {
+  position: relative;
+  background-color: white;
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  z-index: 3;
+  box-shadow: 0px -2px 5px #1a1a1a;
+  top: 350px; }
+  @media only screen and (min-width: 768px) {
+    .container {
+      top: 400px; } }
+  @media only screen and (min-width: 960px) {
+    .container {
+      top: 500px; } }
+  @media only screen and (min-width: 1200px) {
+    .container {
+      top: 600px; } }
+  @media only screen and (min-width: 1441px) {
+    .container {
+      top: 700px; } }
+  @media only screen and (min-width: 1600px) {
+    .container {
+      top: 700px; } }
+
+/* =========== HOVER EFFECTS ============ */
+/* =========== FOOTER ============ */
+footer {
+  position: relative;
+  clear: both;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: #343434;
+  padding: 5px;
+  text-align: right;
+  color: grey;
+  z-index: 2; }
+  footer > span {
+    margin-right: 30px; }
+
+/* =========== TOP NAVIGATION ============ */
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  margin: auto;
+  z-index: 2;
+  border-bottom: 1px solid #9a9a9a; }
+
+#menu {
+  margin: 0 auto;
+  right: 0;
+  padding: 0;
+  max-width: 1600px;
+  list-style-type: none;
+  font-size: 0.8em; }
+
+/* naprawa wysoko´┐Żci elementu - ol */
+#menu:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+/* wygl´┐Żd element´┐Żw - li */
+#menu > li {
+  float: right;
+  width: 150px;
+  position: relative; }
+
+/* wygl´┐Żd element´┐Żw - a */
+#menu > li > a {
+  display: block;
+  padding: 25px;
+  text-decoration: none;
+  text-align: center;
+  color: #9a9a9a;
+  transition-duration: 500ms;
+  -webkit-transition-duration: 500ms;
+  transition-delay: 50ms; }
+
+/* wygl´┐Żd element´┐Żw - a - po najechaniu kursorem myszki na element - li */
+#menu > li:hover > a {
+  background-color: white; }
+
+/* wygl´┐Żd element´┐Żw - li - rodzica ka´┐Żdej cz´┐Żci rozwijanej menu CSS */
+#menu > li {
+  position: relative; }
+
+/* wygl´┐Żd element´┐Żw - ul */
+#menu > li > ul {
+  width: 100%;
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: white; }
+
+/* wygl´┐Żd element´┐Żw - ul - po najechaniu kursorem myszki na element - li */
+#menu > li:hover > ul {
+  visibility: visible; }
+
+/* wygl´┐Żd element´┐Żw - a */
+#menu > li > ul > li > a {
+  display: block;
+  text-decoration: none;
+  padding: 12px;
+  color: #AAA; }
+
+/* wygl´┐Żd element´┐Żw - a - po najechaniu kursorem myszki na element - li */
+#menu > li > ul > li:hover > a {
+  color: white;
+  background-color: #111111;
+  transition-duration: 500ms;
+  -webkit-transition-duration: 500ms;
+  transition-delay: 0ms; }
+
+/* wygl´┐Żd element´┐Żw - ul */
+#menu > li > ul {
+  transform: scaleY(0);
+  -webkit-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  transform-origin: 50% 0;
+  -webkit-transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  transition: 250ms;
+  transition-delay: 100ms; }
+
+/* wygl´┐Żd element´┐Żw - ul - po najechaniu kursorem myszki na element - li */
+#menu > li:hover > ul {
+  transform: scaleY(1);
+  -webkit-transform: scaleY(1);
+  -ms-transform: scaleY(1); }
+
+/*# sourceMappingURL=style_country.css.map */
