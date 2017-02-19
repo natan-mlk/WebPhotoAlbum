@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- linki do czcionek -->
 
+  <!-- FONTS -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,600,800' rel='stylesheet'
         type='text/css'/>
   <link href='http://fonts.googleapis.com/css?family=Comfortaa&subset=latin,latin-ext' rel='stylesheet'
@@ -20,8 +20,6 @@
   <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
   <![endif]-->
 
-  <!--<link rel="stylesheet" type="text/css" href="../css/style.css">-->
-  <!--<link rel="stylesheet" type="text/css" href="../css/style_menu.css">-->
   <link rel="stylesheet" type="text/css" href="../scss/gallery.css">
   <link rel="stylesheet" type="text/css" href="../scss/style_country.css">
 
@@ -29,43 +27,11 @@
   <link rel="stylesheet" type="text/css" media="screen"
         href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css"/>
 
-
-  <!-- skrypt pojawienia się okna galerii i nazwy państwa -->
-
-  <script type="text/javascript">
-    function myFunction() {
-      var boxOne = document.getElementsByClassName('contan')[0],
-        boxTwo = document.getElementsByClassName('country_and_date')[0];
-      boxOne.classList.add('visible');
-      boxTwo.classList.add('visible');
-    }
-  </script>
-
-  <!-- skrypt do scrollowania -->
-  <script type="text/javascript">
-    win.scroll(function () {
-      scrollPosition = win.scrollTop();
-      scrollRatio = 1 - scrollPosition / 300;
-      $(".country_and_date.visible").css("opacity", scrollRatio);
-  </script><!-- NIE DZIAŁA -->
-
-
-  <style>
-
-    div.map {
-
-      background-image: url("../img/malta/malta.png");
-      background-repeat: no-repeat;
-      background-position: center center;
-      z-index: 1;
-      overflow: hidden;
-    }
-  </style>
-
-  <title>Photography</title>
+  <title>Malta</title>
 </head>
 
 <body class="no-touch" onload="setTimeout(myFunction, 300)">
+<script>document.body.className += ' fade-out';</script>
 
 <nav>
   <ul id="menu">
@@ -190,23 +156,15 @@
 
 </div>
 
+<!-- JAVASCRIPT -->
 
-<!-- wygaszenie title - NIE DZIALA -->
-
-<script type="text/javascript">
-  var links = document.getElementsByTagName('img');
-  for (var i = 0; i < links.length; i++) {
-    if (links[i].className == 'suppress') {
-      links[i]._title = links[i].title;
-      links[i].onmouseover = function () {
-        this.title = '';
-      }
-      links[i].onmouseout = function () {
-        this.title = this._title;
-      }
-    }
+<!-- fade effect for page -->
+<script>
+  window.onload = function () {
+    document.body.className = "no-touch";
   }
 </script>
+
 
 
 <!--- KOD JS do galerii Lightbox -->
