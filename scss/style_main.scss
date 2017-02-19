@@ -157,7 +157,6 @@ body {
 
 .container {
   position: relative;
-  background-color: $body_back;
   max-width: $max_width;
   width: 100%;
   margin: 0 auto;
@@ -197,14 +196,12 @@ body {
 }
 
 .center_div {
-  //@include center_elem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
   z-index: 2;
-  //border: solid 5px black;
 }
 
 .text_box {
@@ -414,8 +411,8 @@ nav {
 }
 
 #menu > li > ul > li:hover > a {
-  color: white;
-  background-color: $comment_back;
+  color: grey;
+  background-color: lighten($beige_color, 10%);
   transition-duration: 500ms;
   -webkit-transition-duration: 500ms;
   transition-delay: 0ms;

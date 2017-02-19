@@ -179,8 +179,8 @@ nav {
   color: #AAA; }
 
 #menu > li > ul > li:hover > a {
-  color: white;
-  background-color: #111111;
+  color: grey;
+  background-color: #ccb7a5;
   transition-duration: 500ms;
   -webkit-transition-duration: 500ms;
   transition-delay: 0ms; }

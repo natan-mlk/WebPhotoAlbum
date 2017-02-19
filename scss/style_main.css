@@ -79,7 +79,6 @@ body {
 
 .container {
   position: relative;
-  background-color: #1a1a1a;
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
@@ -309,8 +308,8 @@ nav {
   color: #AAA; }
 
 #menu > li > ul > li:hover > a {
-  color: white;
-  background-color: #343434;
+  color: grey;
+  background-color: #ccb7a5;
   transition-duration: 500ms;
   -webkit-transition-duration: 500ms;
   transition-delay: 0ms; }
