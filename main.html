@@ -4,21 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- linki do czcionek -->
+  <!-- FONTS -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,600,800' rel='stylesheet'
         type='text/css'/>
   <link href='http://fonts.googleapis.com/css?family=Comfortaa&subset=latin,latin-ext' rel='stylesheet'
         type='text/css'>
 
 
-  <!-- poniżej jest formułka dla HTML5Shiv, gwarantująca kompatybilność z html5 -->
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
   <![endif]-->
 
   <!-- CSS oraz STYLE -->
-
-  <!--<link rel="stylesheet" type="text/css" href="css/style_main.css"> -->
   <link rel="stylesheet" type="text/css" href="scss/style_main.css">
 
   <style>
@@ -67,17 +64,12 @@
     }
 
   </style>
-
-
-  <!-- STRONA -->
-
   <title>Photography</title>
 </head>
 
 <body class="no-touch">
 
-
-<!-- fade in zawartości strony -->
+<!-- fade in  -->
 <script>document.body.className += ' fade-out';</script>
 
 <nav>
@@ -3123,7 +3115,6 @@
 
       </div>
 
-
     </div>
 
     <!-- LINKS SECTION -->
@@ -3149,27 +3140,23 @@
       </div>
     </div>
     <footer>
-      <span>Autor: NATAN 2016</span>
+      <span>Autor: NATAN 2017</span>
     </footer>
   </div>
-
-
 </div>
 
 
 <!-- JAVASCRIPT -->
 
-
-<!-- skrypt efektu fade in zawartości strony -->
+<!-- fade effect for page -->
 <script>
   window.onload = function () {
     document.body.className = "";
   }
 </script>
 
-
+<!--SCRIPT FOR THE SAME HEIGHT OF MAP AND LINKS SECTION :D-->
 <script>
-  //SCRIPT FOR THE SAME HEIGHT OF MAP AND LINKS SECTION
   var mapSection = document.getElementsByClassName("map-section")[0].clientHeight;
   document.getElementsByClassName('links-section')[0].style.height = mapSection + "px";
 
@@ -3180,7 +3167,7 @@
   }
 </script>
 
-
+<!--FOR HOVER EFFECTS ON COUNTRIES-->
 <script type="text/javascript">
 
   //POLAND
@@ -3260,23 +3247,5 @@
   }
 
 </script>
-
-
-<!--
-<script type="text/javascript">
-function plHov() {
-var poland = document.getElementsByClassName("polska")[0].style.fill;
-	poland = "#fff"; 
-
-</script> -->
-
-
-<!-- MOJ SKRYPT!
-<script type="text/javascript">
-  var h = window.height;
-  document.getElementsByTagName("body")[0].style.height = h + "px";
-</script> -->
-
-
 </body>
 </html>

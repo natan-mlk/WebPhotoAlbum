@@ -73,7 +73,7 @@ $fontMain: 'Comfortaa', sans-serif;
 }
 
 body {
-  background-color: lighten($comment_back, 40%);
+  background-color: $body_back_light;
   font-size: 100%;
   font-family: $fontMain;
   padding: 0;
@@ -121,7 +121,7 @@ body {
 .welcome_msg {
   background-color: rgba(255, 255, 255, 0.5);
   color: lighten($comment_back, 10%);
-  width: $max_width;
+  width: 100%;
   text-align: center;
   z-index: 1;
   position: fixed;
@@ -348,7 +348,7 @@ nav {
   width: 100%;
   margin: auto;
   z-index: 2;
-  border-bottom: 1px solid lighten($comment_back, 40%);
+  border-bottom: 2px solid $body_back_light;
 }
 
 #menu {
@@ -360,21 +360,18 @@ nav {
   font-size: 0.8em;
 }
 
-/* naprawa wysoko�ci elementu - ol */
 #menu:after {
   content: '';
   display: block;
   clear: both;
 }
 
-/* wygl�d element�w - li */
 #menu > li {
   float: right;
   width: 150px;
   position: relative;
 }
 
-/* wygl�d element�w - a */
 #menu > li > a {
   display: block;
   padding: 25px;
@@ -386,17 +383,14 @@ nav {
   transition-delay: 50ms;
 }
 
-/* wygl�d element�w - a - po najechaniu kursorem myszki na element - li */
 #menu > li:hover > a {
   background-color: white;
 }
 
-/* wygl�d element�w - li - rodzica ka�dej cz�ci rozwijanej menu CSS */
 #menu > li {
   position: relative;
 }
 
-/* wygl�d element�w - ul */
 #menu > li > ul {
   width: 100%;
   visibility: hidden;
@@ -408,12 +402,10 @@ nav {
   background-color: white;
 }
 
-/* wygl�d element�w - ul - po najechaniu kursorem myszki na element - li */
 #menu > li:hover > ul {
   visibility: visible;
 }
 
-/* wygl�d element�w - a */
 #menu > li > ul > li > a {
   display: block;
   text-decoration: none;
@@ -421,16 +413,14 @@ nav {
   color: #AAA;
 }
 
-/* wygl�d element�w - a - po najechaniu kursorem myszki na element - li */
 #menu > li > ul > li:hover > a {
   color: white;
-  background-color: #111111;
+  background-color: $comment_back;
   transition-duration: 500ms;
   -webkit-transition-duration: 500ms;
   transition-delay: 0ms;
 }
 
-/* wygl�d element�w - ul */
 #menu > li > ul {
   transform: scaleY(0);
   -webkit-transform: scaleY(0);
@@ -442,7 +432,6 @@ nav {
   transition-delay: 100ms;
 }
 
-/* wygl�d element�w - ul - po najechaniu kursorem myszki na element - li */
 #menu > li:hover > ul {
   transform: scaleY(1);
   -webkit-transform: scaleY(1);
@@ -465,21 +454,18 @@ nav {
   font-size: 0.8em;
 }
 
-/* naprawa wysoko�ci elementu - ol */
 #menu2:after {
   content: '';
   display: block;
   clear: both;
 }
 
-/* wygl�d element�w - li */
 #menu2 > li {
   float: right;
   width: 150px;
   position: relative;
 }
 
-/* wygl�d element�w - a */
 #menu2 > li > a {
   display: block;
   padding: 14px;
@@ -491,7 +477,6 @@ nav {
   transition-delay: 50ms;
 }
 
-/* wygl�d element�w - a - po najechaniu kursorem myszki na element - li */
 #menu2 > li:hover > a {
   background-color: $beige_color;
   color: white;

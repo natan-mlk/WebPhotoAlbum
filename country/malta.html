@@ -1,192 +1,192 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- linki do czcionek -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linki do czcionek -->
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,600,800' rel='stylesheet'
-          type='text/css'/>
-    <link href='http://fonts.googleapis.com/css?family=Comfortaa&subset=latin,latin-ext' rel='stylesheet'
-          type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,600,800' rel='stylesheet'
+        type='text/css'/>
+  <link href='http://fonts.googleapis.com/css?family=Comfortaa&subset=latin,latin-ext' rel='stylesheet'
+        type='text/css'>
 
-    <!-- poniżej jest formułka dla HTML5Shiv, gwarantująca kompatybilność z html5 -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <![endif]-->
+  <!-- poniżej jest formułka dla HTML5Shiv, gwarantująca kompatybilność z html5 -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <![endif]-->
 
-    <!-- fomułka, by galeria działała też na wcześniejszych IE -->
-    <!--[if lt IE 9]>
-    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-    <![endif]-->
+  <!-- fomułka, by galeria działała też na wcześniejszych IE -->
+  <!--[if lt IE 9]>
+  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <![endif]-->
 
-    <!--<link rel="stylesheet" type="text/css" href="../css/style.css">-->
-    <!--<link rel="stylesheet" type="text/css" href="../css/style_menu.css">-->
-    <link rel="stylesheet" type="text/css" href="../css/gallery.css">
-    <link rel="stylesheet" type="text/css" href="../scss/style_country.css">
+  <!--<link rel="stylesheet" type="text/css" href="../css/style.css">-->
+  <!--<link rel="stylesheet" type="text/css" href="../css/style_menu.css">-->
+  <link rel="stylesheet" type="text/css" href="../scss/gallery.css">
+  <link rel="stylesheet" type="text/css" href="../scss/style_country.css">
 
-    <!-- KOD GALERII Lightbox -->
-    <link rel="stylesheet" type="text/css" media="screen"
-          href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css"/>
-
-
-    <!-- skrypt pojawienia się okna galerii i nazwy państwa -->
-
-    <script type="text/javascript">
-        function myFunction() {
-            var boxOne = document.getElementsByClassName('contan')[0],
-                boxTwo = document.getElementsByClassName('country_and_date')[0];
-            boxOne.classList.add('visible');
-            boxTwo.classList.add('visible');
-        }
-    </script>
-
-    <!-- skrypt do scrollowania -->
-    <script type="text/javascript">
-        win.scroll(function () {
-            scrollPosition = win.scrollTop();
-            scrollRatio = 1 - scrollPosition / 300;
-            $(".country_and_date.visible").css("opacity", scrollRatio);
-    </script><!-- NIE DZIAŁA -->
+  <!-- KOD GALERII Lightbox -->
+  <link rel="stylesheet" type="text/css" media="screen"
+        href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.css"/>
 
 
-    <style>
+  <!-- skrypt pojawienia się okna galerii i nazwy państwa -->
 
-        div.map {
+  <script type="text/javascript">
+    function myFunction() {
+      var boxOne = document.getElementsByClassName('contan')[0],
+        boxTwo = document.getElementsByClassName('country_and_date')[0];
+      boxOne.classList.add('visible');
+      boxTwo.classList.add('visible');
+    }
+  </script>
 
-            background-image: url("../img/malta/malta.png");
-            background-repeat: no-repeat;
-            background-position: center center;
-            z-index: 1;
-            overflow: hidden;
-        }
-    </style>
+  <!-- skrypt do scrollowania -->
+  <script type="text/javascript">
+    win.scroll(function () {
+      scrollPosition = win.scrollTop();
+      scrollRatio = 1 - scrollPosition / 300;
+      $(".country_and_date.visible").css("opacity", scrollRatio);
+  </script><!-- NIE DZIAŁA -->
 
-    <title>Photography</title>
+
+  <style>
+
+    div.map {
+
+      background-image: url("../img/malta/malta.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      z-index: 1;
+      overflow: hidden;
+    }
+  </style>
+
+  <title>Photography</title>
 </head>
 
 <body class="no-touch" onload="setTimeout(myFunction, 300)">
 
 <nav>
-    <ul id="menu">
-        <li><a href="country/malta.html">b l o g</a></li>
-        <li><a href="main.html">e u r o p a</a>
-            <ul>
-                <li><a href="malta.html">Polska</a></li>
-                <li><a href="malta.html">Malta</a></li>
-                <li><a href="malta.html">Norwegia</a></li>
-                <li><a href="malta.html">Włochy</a></li>
-            </ul>
-        </li>
-        <li><a href="../main.html">n a t u r a</a></li>
-        <li><a href="../main.html">m a k r o</a></li>
-    </ul>
+  <ul id="menu">
+    <li><a href="country/malta.html">b l o g</a></li>
+    <li><a href="main.html">e u r o p a</a>
+      <ul>
+        <li><a href="malta.html">Polska</a></li>
+        <li><a href="malta.html">Malta</a></li>
+        <li><a href="malta.html">Norwegia</a></li>
+        <li><a href="malta.html">Włochy</a></li>
+      </ul>
+    </li>
+    <li><a href="../main.html">n a t u r a</a></li>
+    <li><a href="../main.html">m a k r o</a></li>
+  </ul>
 </nav>
 
 
 <div class="welcome_msg">
-    <p class="title">Malta i Gozo<br></p>
-    <p><b>kwiecień 2016</b></p>
+  <p class="title">Malta i Gozo<br></p>
+  <p><b>kwiecień 2016</b></p>
 </div>
 
 <div class="wide welcome_fixed">
-    <img id="welcome_pic" src="../img/malta/welcome_pic.jpg">
+  <img id="welcome_pic" src="../img/malta/welcome_pic.jpg">
 </div>
 
 
 <!--===========  PICTURES ==========-->
 
 <div class="container">
-    <div class="wrap">
+  <div class="wrap">
 
-        <!-- AZURE WINDOW -->
-        <div class="box">
-            <div class="boxInner brighten">
-                <img class="fancybox" src="../img/malta/malta_01_sq.jpg" data-big="../img/malta/malta_01_big.jpg"
-                     title="Azure Window, Gozo Island"/>
-                <div class="titleBox">Azure Window, Gozo Island</div>
-            </div>
-        </div>
-
-        <!-- MDINA 1 -->
-        <div class="box">
-            <div class="boxInner brighten">
-                <img class="fancybox" src="../img/malta/malta_03_sq.jpg" data-big="../img/malta/malta_03_big.jpg"
-                     title="Uliczki średniowiecznego miasta, Mdina"/>
-                <div class="titleBox">Średniowieczna Mdina</div>
-            </div>
-        </div>
-
-
-        <!-- SLIEMA -->
-        <div class="box">
-            <div class="boxInner brighten">
-                <img class="fancybox" src="../img/malta/malta_05_sq.jpg" data-big="../img/malta/malta_05_big.jpg"
-                     title="Sliema"/>
-                <div class="titleBox">Sliema</div>
-            </div>
-        </div>
-
-        <!-- MDINA 2 -->
-        <div class="box">
-            <div class="boxInner brighten">
-                <img class="fancybox" src="../img/malta/malta_04_sq.jpg" data-big="../img/malta/malta_04_big.jpg"
-                     title="Uliczki średniowiecznego miasta, Mdina"/>
-                <div class="titleBox">Średniowieczna Mdina</div>
-            </div>
-        </div>
-
-        <!-- CAT -->
-        <div class="box">
-            <div class="boxInner brighten">
-                <img class="fancybox" src="../img/malta/malta_02_sq.jpg" data-big="../img/malta/malta_02_big.jpg"
-                     title="Miejscowy kot, Valetta"/>
-                <div class="titleBox">Miejscowy kot, Valetta</div>
-            </div>
-        </div>
-
-        <!-- GOZO MACRO -->
-        <div class="box">
-            <div class="boxInner brighten">
-                <img class="fancybox" src="../img/malta/malta_06_sq.jpg" data-big="../img/malta/malta_06_big.jpg"
-                     title="Kwiaty, Gozo Island"/>
-                <div class="titleBox">Kwiaty, Gozo Island</div>
-            </div>
-        </div>
-
-        <!-- CLIFFS -->
-        <div class="box">
-            <div class="boxInner brighten">
-                <img class="fancybox" src="../img/malta/malta_07_sq.jpg" data-big="../img/malta/malta_07_big.jpg"
-                     title="Bahrija Cliffs"/>
-                <div class="titleBox">Bahrija Cliffs</div>
-            </div>
-        </div>
-
-        <!-- PEOPLE -->
-        <div class="box">
-            <div class="boxInner brighten">
-                <img class="fancybox" src="../img/malta/malta_08_sq.jpg" data-big="../img/malta/malta_08_big.jpg"
-                     title="Golden Bay"/>
-                <div class="titleBox">Golden Bay</div>
-            </div>
-        </div>
-
-        <!-- PHONE -->
-        <div class="box">
-            <div class="boxInner brighten">
-                <img class="fancybox" src="../img/malta/malta_09_sq.jpg" data-big="../img/malta/malta_09_big.jpg"
-                     title="Valetta Nocą"/>
-                <div class="titleBox">Valetta Nocą</div>
-            </div>
-        </div>
-
-
+    <!-- AZURE WINDOW -->
+    <div class="box">
+      <div class="boxInner brighten">
+        <img class="fancybox" src="../img/malta/malta_01_sq.jpg" data-big="../img/malta/malta_01_big.jpg"
+             title="Azure Window, Gozo Island"/>
+        <div class="titleBox">Azure Window, Gozo Island</div>
+      </div>
     </div>
 
-    <footer>
-        <span>Autor: NATAN 2016</span>
-    </footer>
+    <!-- MDINA 1 -->
+    <div class="box">
+      <div class="boxInner brighten">
+        <img class="fancybox" src="../img/malta/malta_03_sq.jpg" data-big="../img/malta/malta_03_big.jpg"
+             title="Uliczki średniowiecznego miasta, Mdina"/>
+        <div class="titleBox">Średniowieczna Mdina</div>
+      </div>
+    </div>
+
+
+    <!-- SLIEMA -->
+    <div class="box">
+      <div class="boxInner brighten">
+        <img class="fancybox" src="../img/malta/malta_05_sq.jpg" data-big="../img/malta/malta_05_big.jpg"
+             title="Sliema"/>
+        <div class="titleBox">Sliema</div>
+      </div>
+    </div>
+
+    <!-- MDINA 2 -->
+    <div class="box">
+      <div class="boxInner brighten">
+        <img class="fancybox" src="../img/malta/malta_04_sq.jpg" data-big="../img/malta/malta_04_big.jpg"
+             title="Uliczki średniowiecznego miasta, Mdina"/>
+        <div class="titleBox">Średniowieczna Mdina</div>
+      </div>
+    </div>
+
+    <!-- CAT -->
+    <div class="box">
+      <div class="boxInner brighten">
+        <img class="fancybox" src="../img/malta/malta_02_sq.jpg" data-big="../img/malta/malta_02_big.jpg"
+             title="Miejscowy kot, Valetta"/>
+        <div class="titleBox">Miejscowy kot, Valetta</div>
+      </div>
+    </div>
+
+    <!-- GOZO MACRO -->
+    <div class="box">
+      <div class="boxInner brighten">
+        <img class="fancybox" src="../img/malta/malta_06_sq.jpg" data-big="../img/malta/malta_06_big.jpg"
+             title="Kwiaty, Gozo Island"/>
+        <div class="titleBox">Kwiaty, Gozo Island</div>
+      </div>
+    </div>
+
+    <!-- CLIFFS -->
+    <div class="box">
+      <div class="boxInner brighten">
+        <img class="fancybox" src="../img/malta/malta_07_sq.jpg" data-big="../img/malta/malta_07_big.jpg"
+             title="Bahrija Cliffs"/>
+        <div class="titleBox">Bahrija Cliffs</div>
+      </div>
+    </div>
+
+    <!-- PEOPLE -->
+    <div class="box">
+      <div class="boxInner brighten">
+        <img class="fancybox" src="../img/malta/malta_08_sq.jpg" data-big="../img/malta/malta_08_big.jpg"
+             title="Golden Bay"/>
+        <div class="titleBox">Golden Bay</div>
+      </div>
+    </div>
+
+    <!-- PHONE -->
+    <div class="box">
+      <div class="boxInner brighten">
+        <img class="fancybox" src="../img/malta/malta_09_sq.jpg" data-big="../img/malta/malta_09_big.jpg"
+             title="Valetta Nocą"/>
+        <div class="titleBox">Valetta Nocą</div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <footer>
+    <span>Autor: NATAN 2016</span>
+  </footer>
 
 </div>
 
@@ -194,18 +194,18 @@
 <!-- wygaszenie title - NIE DZIALA -->
 
 <script type="text/javascript">
-    var links = document.getElementsByTagName('img');
-    for (var i = 0; i < links.length; i++) {
-        if (links[i].className == 'suppress') {
-            links[i]._title = links[i].title;
-            links[i].onmouseover = function () {
-                this.title = '';
-            }
-            links[i].onmouseout = function () {
-                this.title = this._title;
-            }
-        }
+  var links = document.getElementsByTagName('img');
+  for (var i = 0; i < links.length; i++) {
+    if (links[i].className == 'suppress') {
+      links[i]._title = links[i].title;
+      links[i].onmouseover = function () {
+        this.title = '';
+      }
+      links[i].onmouseout = function () {
+        this.title = this._title;
+      }
     }
+  }
 </script>
 
 
@@ -216,42 +216,42 @@
 <script type="text/javascript"
         src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js"></script>
 <script type="text/javascript">
-    $(function ($) {
-        var addToAll = false;
-        var gallery = true;
-        var titlePosition = 'inside';
-        $(addToAll ? 'img' : 'img.fancybox').each(function () {
-            var $this = $(this);
-            var title = $this.attr('title');
-            var src = $this.attr('data-big') || $this.attr('src');
-            var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
-            $this.wrap(a);
-        });
-        if (gallery)
-            $('a.fancybox').attr('rel', 'fancyboxgallery');
-        $('a.fancybox').fancybox({
-            titlePosition: titlePosition
-        });
+  $(function ($) {
+    var addToAll = false;
+    var gallery = true;
+    var titlePosition = 'inside';
+    $(addToAll ? 'img' : 'img.fancybox').each(function () {
+      var $this = $(this);
+      var title = $this.attr('title');
+      var src = $this.attr('data-big') || $this.attr('src');
+      var a = $('<a href="#" class="fancybox"></a>').attr('href', src).attr('title', title);
+      $this.wrap(a);
     });
-    $.noConflict();
+    if (gallery)
+      $('a.fancybox').attr('rel', 'fancyboxgallery');
+    $('a.fancybox').fancybox({
+      titlePosition: titlePosition
+    });
+  });
+  $.noConflict();
 </script>
 
 <!-- KOD JS do efektu hover na galerii -->
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
 <script type="text/javascript">
-    $(function () {
-        // See if this is a touch device
-        if ('ontouchstart' in window) {
-            // Set the correct [touchscreen] body class
-            $('body').removeClass('no-touch').addClass('touch');
+  $(function () {
+    // See if this is a touch device
+    if ('ontouchstart' in window) {
+      // Set the correct [touchscreen] body class
+      $('body').removeClass('no-touch').addClass('touch');
 
-            // Add the touch toggle to show text when tapped
-            $('div.boxInner img').click(function () {
-                $(this).closest('.boxInner').toggleClass('touchFocus');
-            });
-        }
-    });
+      // Add the touch toggle to show text when tapped
+      $('div.boxInner img').click(function () {
+        $(this).closest('.boxInner').toggleClass('touchFocus');
+      });
+    }
+  });
 </script>
 
 

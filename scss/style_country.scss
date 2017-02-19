@@ -156,7 +156,7 @@ body {
 
 .container {
   position: relative;
-  background-color: white;
+  background-color: $comment_back;
   max-width: $max_width;
   width: 100%;
   margin: 0 auto;
@@ -180,8 +180,6 @@ body {
     top: 700px
   }
 }
-
-
 
 /* =========== HOVER EFFECTS ============ */
 
@@ -215,7 +213,7 @@ nav {
   width: 100%;
   margin: auto;
   z-index: 2;
-  border-bottom: 1px solid lighten($comment_back, 40%);
+  border-bottom: 2px solid $body_back_light;
 }
 
 #menu {
@@ -227,21 +225,18 @@ nav {
   font-size: 0.8em;
 }
 
-/* naprawa wysoko�ci elementu - ol */
 #menu:after {
   content: '';
   display: block;
   clear: both;
 }
 
-/* wygl�d element�w - li */
 #menu > li {
   float: right;
   width: 150px;
   position: relative;
 }
 
-/* wygl�d element�w - a */
 #menu > li > a {
   display: block;
   padding: 25px;
@@ -253,17 +248,14 @@ nav {
   transition-delay: 50ms;
 }
 
-/* wygl�d element�w - a - po najechaniu kursorem myszki na element - li */
 #menu > li:hover > a {
   background-color: white;
 }
 
-/* wygl�d element�w - li - rodzica ka�dej cz�ci rozwijanej menu CSS */
 #menu > li {
   position: relative;
 }
 
-/* wygl�d element�w - ul */
 #menu > li > ul {
   width: 100%;
   visibility: hidden;
@@ -275,12 +267,10 @@ nav {
   background-color: white;
 }
 
-/* wygl�d element�w - ul - po najechaniu kursorem myszki na element - li */
 #menu > li:hover > ul {
   visibility: visible;
 }
 
-/* wygl�d element�w - a */
 #menu > li > ul > li > a {
   display: block;
   text-decoration: none;
@@ -288,7 +278,6 @@ nav {
   color: #AAA;
 }
 
-/* wygl�d element�w - a - po najechaniu kursorem myszki na element - li */
 #menu > li > ul > li:hover > a {
   color: white;
   background-color: #111111;
@@ -297,7 +286,6 @@ nav {
   transition-delay: 0ms;
 }
 
-/* wygl�d element�w - ul */
 #menu > li > ul {
   transform: scaleY(0);
   -webkit-transform: scaleY(0);
@@ -309,7 +297,6 @@ nav {
   transition-delay: 100ms;
 }
 
-/* wygl�d element�w - ul - po najechaniu kursorem myszki na element - li */
 #menu > li:hover > ul {
   transform: scaleY(1);
   -webkit-transform: scaleY(1);

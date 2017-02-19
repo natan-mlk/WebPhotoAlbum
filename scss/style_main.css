@@ -1,9 +1,8 @@
-@charset "UTF-8";
 * {
   box-sizing: border-box; }
 
 body {
-  background-color: #9a9a9a;
+  background-color: white;
   font-size: 100%;
   font-family: "Comfortaa", sans-serif;
   padding: 0;
@@ -47,7 +46,7 @@ body {
 .welcome_msg {
   background-color: rgba(255, 255, 255, 0.5);
   color: #4d4d4d;
-  width: 1600px;
+  width: 100%;
   text-align: center;
   z-index: 1;
   position: fixed;
@@ -254,7 +253,7 @@ nav {
   width: 100%;
   margin: auto;
   z-index: 2;
-  border-bottom: 1px solid #9a9a9a; }
+  border-bottom: 2px solid white; }
 
 #menu {
   margin: 0 auto;
@@ -264,19 +263,16 @@ nav {
   list-style-type: none;
   font-size: 0.8em; }
 
-/* naprawa wysoko´┐Żci elementu - ol */
 #menu:after {
   content: '';
   display: block;
   clear: both; }
 
-/* wygl´┐Żd element´┐Żw - li */
 #menu > li {
   float: right;
   width: 150px;
   position: relative; }
 
-/* wygl´┐Żd element´┐Żw - a */
 #menu > li > a {
   display: block;
   padding: 25px;
@@ -287,15 +283,12 @@ nav {
   -webkit-transition-duration: 500ms;
   transition-delay: 50ms; }
 
-/* wygl´┐Żd element´┐Żw - a - po najechaniu kursorem myszki na element - li */
 #menu > li:hover > a {
   background-color: white; }
 
-/* wygl´┐Żd element´┐Żw - li - rodzica ka´┐Żdej cz´┐Żci rozwijanej menu CSS */
 #menu > li {
   position: relative; }
 
-/* wygl´┐Żd element´┐Żw - ul */
 #menu > li > ul {
   width: 100%;
   visibility: hidden;
@@ -306,26 +299,22 @@ nav {
   list-style-type: none;
   background-color: white; }
 
-/* wygl´┐Żd element´┐Żw - ul - po najechaniu kursorem myszki na element - li */
 #menu > li:hover > ul {
   visibility: visible; }
 
-/* wygl´┐Żd element´┐Żw - a */
 #menu > li > ul > li > a {
   display: block;
   text-decoration: none;
   padding: 12px;
   color: #AAA; }
 
-/* wygl´┐Żd element´┐Żw - a - po najechaniu kursorem myszki na element - li */
 #menu > li > ul > li:hover > a {
   color: white;
-  background-color: #111111;
+  background-color: #343434;
   transition-duration: 500ms;
   -webkit-transition-duration: 500ms;
   transition-delay: 0ms; }
 
-/* wygl´┐Żd element´┐Żw - ul */
 #menu > li > ul {
   transform: scaleY(0);
   -webkit-transform: scaleY(0);
@@ -336,7 +325,6 @@ nav {
   transition: 250ms;
   transition-delay: 100ms; }
 
-/* wygl´┐Żd element´┐Żw - ul - po najechaniu kursorem myszki na element - li */
 #menu > li:hover > ul {
   transform: scaleY(1);
   -webkit-transform: scaleY(1);
@@ -355,19 +343,16 @@ nav {
   list-style-type: none;
   font-size: 0.8em; }
 
-/* naprawa wysoko´┐Żci elementu - ol */
 #menu2:after {
   content: '';
   display: block;
   clear: both; }
 
-/* wygl´┐Żd element´┐Żw - li */
 #menu2 > li {
   float: right;
   width: 150px;
   position: relative; }
 
-/* wygl´┐Żd element´┐Żw - a */
 #menu2 > li > a {
   display: block;
   padding: 14px;
@@ -378,7 +363,6 @@ nav {
   -webkit-transition-duration: 500ms;
   transition-delay: 50ms; }
 
-/* wygl´┐Żd element´┐Żw - a - po najechaniu kursorem myszki na element - li */
 #menu2 > li:hover > a {
   background-color: #ba9d84;
   color: white; }
