@@ -277,6 +277,7 @@ nav {
   padding: 25px;
   text-decoration: none;
   text-align: center;
+  letter-spacing: 5px;
   color: #9a9a9a;
   transition-duration: 500ms;
   -webkit-transition-duration: 500ms;

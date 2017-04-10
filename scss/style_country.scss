@@ -69,10 +69,6 @@ $fontMain: 'Comfortaa', sans-serif;
 
 // --------------- CODE --------------------
 
-//* {
-//  box-sizing: border-box;
-//}
-
 body {
   background-color: $body_back_light;
   font-size: 100%;
@@ -98,6 +94,8 @@ body {
 #welcome_pic {
   opacity: 1;
   width: 767px;
+
+  box-sizing: border-box;
 
   @include screen_tablet_portrait {
     width: 959px
@@ -134,6 +132,7 @@ body {
   letter-spacing: 5px;
   word-spacing: 15px;
   line-height: 1.7;
+
   @include screen_tablet_portrait {
     font-size: 1.1rem;
   }
@@ -163,6 +162,7 @@ body {
   z-index: 3;
   box-shadow: 0px -2px 5px #1a1a1a;
   top: 350px;
+
   @include screen_tablet_portrait {
     top: 400px
   }
@@ -181,10 +181,6 @@ body {
   }
 }
 
-/* =========== HOVER EFFECTS ============ */
-
-
-
 /* =========== FOOTER ============ */
 
 footer {
@@ -198,6 +194,7 @@ footer {
   text-align: right;
   color: grey;
   z-index: 2;
+  box-sizing: border-box;
   > span {
     margin-right: 30px;
   }
@@ -214,6 +211,7 @@ nav {
   margin: auto;
   z-index: 2;
   border-bottom: 2px solid $body_back_light;
+  box-sizing: border-box;
 }
 
 #menu {
@@ -242,6 +240,7 @@ nav {
   padding: 25px;
   text-decoration: none;
   text-align: center;
+  letter-spacing: 5px;
   color: lighten($comment_back, 40%);
   transition-duration: 500ms;
   -webkit-transition-duration: 500ms;

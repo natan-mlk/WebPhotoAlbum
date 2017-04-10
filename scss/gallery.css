@@ -19,6 +19,8 @@
 .wrap {
   overflow: hidden;
   margin: 0 auto;
+
+  box-sizing: border-box;
 }
 
 .box {

@@ -23,7 +23,8 @@ body {
 
 #welcome_pic {
   opacity: 1;
-  width: 767px; }
+  width: 767px;
+  box-sizing: border-box; }
   @media only screen and (min-width: 768px) {
     #welcome_pic {
       width: 959px; } }
@@ -99,7 +100,6 @@ body {
     .container {
       top: 700px; } }
 
-/* =========== HOVER EFFECTS ============ */
 /* =========== FOOTER ============ */
 footer {
   position: relative;
@@ -111,7 +111,8 @@ footer {
   padding: 5px;
   text-align: right;
   color: grey;
-  z-index: 2; }
+  z-index: 2;
+  box-sizing: border-box; }
   footer > span {
     margin-right: 30px; }
 
@@ -123,7 +124,8 @@ nav {
   width: 100%;
   margin: auto;
   z-index: 2;
-  border-bottom: 2px solid white; }
+  border-bottom: 2px solid white;
+  box-sizing: border-box; }
 
 #menu {
   margin: 0 auto;
@@ -148,6 +150,7 @@ nav {
   padding: 25px;
   text-decoration: none;
   text-align: center;
+  letter-spacing: 5px;
   color: #9a9a9a;
   transition-duration: 500ms;
   -webkit-transition-duration: 500ms;
